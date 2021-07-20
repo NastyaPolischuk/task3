@@ -1,0 +1,9 @@
+<div >
+  <h1>Генератор случайных строк</h1>
+  <p *ngIf="!strZero()"
+     [class.b]="!onlyNumber()"
+     [class.r]="palindrome()"
+  >{{symbols}}</p>
+
+  <button (click)="stop()">Stop</button>
+</div>
